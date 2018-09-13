@@ -46,6 +46,19 @@
   fbq('init', '159637518054016');
   fbq('track', 'ViewContent');
     
+    
+  var button = document.getElementById('itunes');
+  button.addEventListener(
+    'click', 
+    function() { 
+      fbq('track', 'ViewContent', {
+        content_name: 'itunes'
+      });          
+    },
+    false
+  );
+
+    
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=159637518054016&ev=PageView&noscript=1"
@@ -101,7 +114,7 @@
                 <h5 style="color:#333333; background-color:#ffffff">ALSO AVAILABLE ON ITUNES!</h5>
                 
                 <br />
-                <a href="https://itunes.apple.com/us/album/the-coolest-songs-for-the-coolest-kids/1425550051">
+                <a id="itunes" href="https://itunes.apple.com/us/album/the-coolest-songs-for-the-coolest-kids/1425550051">
                     <img src="../img/available-on-itunes.png" width="150" />
                 </a>
                 <br />
